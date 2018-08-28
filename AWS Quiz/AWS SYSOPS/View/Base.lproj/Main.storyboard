@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AWS_SYSOPS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="CMH-2o-L00">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVR-Bj-AHa" userLabel="FooterView">
+                                        <rect key="frame" x="0.0" y="599" width="375" height="68"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmv-By-NYr" userLabel="ProgressView">
+                                                <rect key="frame" x="0.0" y="60.5" width="1" height="8.5"/>
+                                                <color key="backgroundColor" red="0.96470588235294119" green="0.62352941176470589" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XX/25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DC9-i6-D7z">
+                                                <rect key="frame" x="8" y="18" width="91" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="91" id="7en-zm-j6H"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.96470588235294119" green="0.62352941176470589" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 325" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jz-Zx-xOF">
+                                                <rect key="frame" x="264" y="18" width="111" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="111" id="8oM-FC-Nx3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.96470588235294119" green="0.62352941176470589" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7XR-e5-MGx" userLabel="nextButton">
+                                                <rect key="frame" x="270" y="0.0" width="98" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="idc-Dr-5lC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNE-2b-xT7" userLabel="previousButton">
+                                                <rect key="frame" x="8" y="0.0" width="98" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="previousButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sn7-DF-der"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10306078767123288" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="B1N-ko-wT7"/>
+                                            <constraint firstAttribute="bottom" secondItem="mmv-By-NYr" secondAttribute="bottom" constant="-1" id="USI-kH-9Lw"/>
+                                            <constraint firstItem="DC9-i6-D7z" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BVR-Bj-AHa" secondAttribute="leadingMargin" id="Wr3-5W-eKr"/>
+                                            <constraint firstAttribute="trailing" secondItem="8Jz-Zx-xOF" secondAttribute="trailing" id="Y5v-by-avK"/>
+                                            <constraint firstItem="DC9-i6-D7z" firstAttribute="top" secondItem="BVR-Bj-AHa" secondAttribute="top" constant="18" id="bNc-f2-PBd"/>
+                                            <constraint firstItem="DC9-i6-D7z" firstAttribute="baseline" secondItem="8Jz-Zx-xOF" secondAttribute="baseline" id="isa-tK-4Rh"/>
+                                            <constraint firstItem="mmv-By-NYr" firstAttribute="top" secondItem="DC9-i6-D7z" secondAttribute="bottom" constant="22" id="rTI-ja-qrs"/>
+                                            <constraint firstItem="8Jz-Zx-xOF" firstAttribute="leading" secondItem="DC9-i6-D7z" secondAttribute="trailing" constant="165" id="sAt-If-cR3"/>
+                                            <constraint firstItem="mmv-By-NYr" firstAttribute="leading" secondItem="BVR-Bj-AHa" secondAttribute="leading" id="xWJ-SV-8FI"/>
+                                            <constraint firstAttribute="trailing" secondItem="mmv-By-NYr" secondAttribute="trailing" constant="374" id="zGZ-Iv-jI2"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gEN-oT-iIK" userLabel="ButtonView">
+                                        <rect key="frame" x="8" y="356" width="359" height="235"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="yqC-gT-Fxf">
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="235"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="A. AWS CloudWatch">
+                                                    <color key="titleColor" red="0.96470588235294119" green="0.62352941176470589" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0oq-Rs-kVU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.098512414383561647" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDx-ps-vBG">
+                                        <rect key="frame" x="8" y="76" width="359" height="272"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">A user has setup a CloudWatch alarm on an EC2 action when the CPU utilization is above 75%. The alarm sends a notification to SNS on the alarm state. If the user wants to simulate the alarm action how can he achieve this?</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" red="0.96470588235294119" green="0.62352941176470589" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-08-28 at 1.44.22 PM" translatesAutoresizingMaskIntoConstraints="NO" id="I22-eg-zhk" userLabel="Logo">
+                                        <rect key="frame" x="126" y="28" width="122" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13725490196078433" green="0.18431372549019609" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="BVR-Bj-AHa" firstAttribute="centerX" secondItem="CMH-2o-L00" secondAttribute="centerX" id="Kfh-DY-ycW"/>
+                                    <constraint firstItem="BVR-Bj-AHa" firstAttribute="leading" secondItem="CMH-2o-L00" secondAttribute="leading" id="at4-5p-EA7"/>
+                                    <constraint firstAttribute="trailing" secondItem="BVR-Bj-AHa" secondAttribute="trailing" id="iJS-ED-kYD"/>
+                                    <constraint firstAttribute="bottom" secondItem="BVR-Bj-AHa" secondAttribute="bottom" id="mDz-OT-oAs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CMH-2o-L00" secondAttribute="trailing" id="ISe-QZ-Tmy"/>
+                            <constraint firstItem="CMH-2o-L00" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="M4w-p4-cDo"/>
+                            <constraint firstItem="CMH-2o-L00" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UC6-64-KWL"/>
+                            <constraint firstItem="CMH-2o-L00" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Vg8-rz-qYY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="optionA" destination="yqC-gT-Fxf" id="fX3-dU-J2e"/>
+                        <outlet property="progressView" destination="mmv-By-NYr" id="wc2-7f-yLf"/>
+                        <outlet property="questionCounter" destination="DC9-i6-D7z" id="jOV-cH-FZO"/>
+                        <outlet property="questionLabel" destination="dDx-ps-vBG" id="m9W-HP-8gQ"/>
+                        <outlet property="scoreCounter" destination="8Jz-Zx-xOF" id="ZB5-Xd-rH5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Screen Shot 2018-08-28 at 1.44.22 PM" width="160" height="108"/>
+    </resources>
+</document>
