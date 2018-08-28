@@ -1,4 +1,4 @@
-# AWS Quiz
+AWS Quiz
 
 Version 2.0 </br>
 
