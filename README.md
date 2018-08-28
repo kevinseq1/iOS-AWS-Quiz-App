@@ -1,7 +1,7 @@
 # AWS Quiz
 
-Version 2.0
-A Simple application that allows the user to review for AWS SYSOPS Certification.
+####Version 2.0
+####A Simple application that allows the user to review for AWS SYSOPS Certification.
 
 ## Getting Started
 
@@ -9,10 +9,10 @@ The user is provided with a question relating to the domain of AWS SYSOPS and is
 
 ### Launch Screen
 
-The launch screen that is displayed while the user is waiting for the application to load
+The launch screen that is displayed while the user is waiting for the application to load.
 
 ```
-Give examples
+
 ```
 
 ### Question Screen
@@ -20,12 +20,12 @@ Give examples
 The question screen where the questions, choices, question number, score and the progress bar is displayed.
 
 ```
-Give examples
+
 ```
 
 ## Built With
 
-*Xcode
-*Swift 4.2
-*Images from google and aws.
+* Xcode
+* Swift 4.2
+* Images from google and aws.
 
