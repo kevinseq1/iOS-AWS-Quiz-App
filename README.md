@@ -12,10 +12,10 @@ The user is provided with a question relating to the domain of AWS SYSOPS and is
 
 The launch screen that is displayed while the user is waiting for the application to load.
 
-```
+
 <img src="images/IMG_4383.PNG" width="100%" height="100%">
 ![](images/IMG_4383.PNG)
-```
+
 
 ## Question Screen
 
