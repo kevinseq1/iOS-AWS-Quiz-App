@@ -1,1 +1,1 @@
-# iOS-AWS-Quiz-App
+# AWS Quiz
